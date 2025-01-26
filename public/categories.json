@@ -1,0 +1,102 @@
+[
+  {
+    "product_id": 1,
+    "category": "iPhone",
+    "slug": "apple-iphone-15-pro-max"
+  },
+  {
+    "product_id": 2,
+    "category": "Phones",
+    "slug": "samsung-galaxy-s23-ultra"
+  },
+  {
+    "product_id": 3,
+    "category": "Laptops",
+    "slug": "dell-xps-15"
+  },
+  {
+    "product_id": 4,
+    "category": "MacBook",
+    "slug": "apple-macbook-pro-m2"
+  },
+  {
+    "product_id": 5,
+    "category": "Accessories",
+    "slug": "logitech-mx-master-3s"
+  },
+  {
+    "product_id": 6,
+    "category": "Smart Watches",
+    "slug": "apple-watch-series-9"
+  },
+  {
+    "product_id": 7,
+    "category": "Laptops",
+    "slug": "microsoft-surface-laptop-5"
+  },
+  {
+    "product_id": 8,
+    "category": "Smart Watches",
+    "slug": "samsung-galaxy-watch-6"
+  },
+  {
+    "product_id": 9,
+    "category": "Laptops",
+    "slug": "asus-rog-zephyrus-g14"
+  },
+  {
+    "product_id": 10,
+    "category": "Accessories",
+    "slug": "beats-studio-buds"
+  },
+  {
+    "product_id": 11,
+    "category": "iPhone",
+    "slug": "apple-iphone-14-pro"
+  },
+  {
+    "product_id": 12,
+    "category": "Phones",
+    "slug": "google-pixel-8-pro"
+  },
+  {
+    "product_id": 13,
+    "category": "Laptops",
+    "slug": "hp-spectre-x360"
+  },
+  {
+    "product_id": 14,
+    "category": "Accessories",
+    "slug": "sony-wh-1000xm5"
+  },
+  {
+    "product_id": 15,
+    "category": "Smart Watches",
+    "slug": "garmin-fenix-7x"
+  },
+  {
+    "product_id": 16,
+    "category": "Laptops",
+    "slug": "lenovo-legion-5-pro"
+  },
+  {
+    "product_id": 17,
+    "category": "Accessories",
+    "slug": "apple-magic-keyboard"
+  },
+  {
+    "product_id": 18,
+    "category": "Accessories",
+    "slug": "samsung-galaxy-tab-s9"
+  },
+  {
+    "product_id": 19,
+    "category": "Accessories",
+    "slug": "apple-airpods-pro-2nd-gen"
+  },
+  {
+    "product_id": 20,
+    "category": "MacBook",
+    "slug": "apple-macbook-air-m2"
+  }
+]
