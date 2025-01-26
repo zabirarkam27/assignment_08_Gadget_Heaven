@@ -1,20 +1,27 @@
-import { Outlet } from "react-router-dom";
-
+import { Outlet, useLocation } from "react-router-dom";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 const MainLayout = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+  console.log(isHomePage);
+
   return (
     <div>
       {/* Navbar */}
-      <div className="h-12">
+      <div
+        className={`mt-4 h-16 container mx-auto rounded-t-xl ${
+          isHomePage ? "bg-[#9538E2]" : "bg-white"
+        } ${isHomePage ? "text-white" : "bg-black"}`}
+      >
         <Navbar />
       </div>
       {/* Dynamic Section */}
-      <div className="min-h-[calc(100vh-360px)] py-12 max-w-7xl w-11/12 mx-auto">
+      <div className="min-h-[calc(100vh-360px)] container mx-auto">
         <Outlet />
       </div>
-        <Footer />
+      <Footer />
     </div>
   );
 };

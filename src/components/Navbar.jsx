@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar bg-base-100">
+      <div className="navbar px-10 z-50 fixed backdrop-blur-xl rounded-t-xl">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -28,7 +28,7 @@ const Navbar = () => {
             >
               <NavLink
                 className={({ isActive }) =>
-                  `${isActive ? "text-[#9538E2]" : "hover:text-warning"}`
+                  `${isActive ? "text-warning" : "hover:text-[#e3c7fa]"}`
                 }
                 to="/"
               >
@@ -36,7 +36,7 @@ const Navbar = () => {
               </NavLink>
               <NavLink
                 className={({ isActive }) =>
-                  `${isActive ? "text-warning" : "hover:text-warning"}`
+                  `${isActive ? "text-warning" : "hover:text-[#e3c7fa]"}`
                 }
                 to="/statistics"
               >
@@ -44,7 +44,7 @@ const Navbar = () => {
               </NavLink>
               <NavLink
                 className={({ isActive }) =>
-                  `${isActive ? "text-warning" : "hover:text-warning"}`
+                  `${isActive ? "text-warning" : "hover:text-[#e3c7fa]"}`
                 }
                 to="/dashboard"
               >
@@ -63,7 +63,7 @@ const Navbar = () => {
           <ul className="menu menu-horizontal space-x-4 px-1">
             <NavLink
               className={({ isActive }) =>
-                `${isActive ? "text-[#9538E2]" : "hover:text-[#9538E2]"}`
+                `${isActive ? "text-warning" : "hover:text-[#e3c7fa]"}`
               }
               to="/"
             >
@@ -71,7 +71,7 @@ const Navbar = () => {
             </NavLink>
             <NavLink
               className={({ isActive }) =>
-                `${isActive ? "text-warning" : "hover:text-warning"}`
+                `${isActive ? "text-warning" : "hover:text-[#e3c7fa]"}`
               }
               to="/statistics"
             >
@@ -79,7 +79,7 @@ const Navbar = () => {
             </NavLink>
             <NavLink
               className={({ isActive }) =>
-                `${isActive ? "text-warning" : "hover:text-warning"}`
+                `${isActive ? "text-warning" : "hover:text-[#e3c7fa]"}`
               }
               to="/dashboard"
             >
