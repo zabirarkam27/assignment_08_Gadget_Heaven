@@ -1,6 +1,7 @@
 import { Outlet, useLocation } from "react-router-dom";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import { Toaster } from "react-hot-toast";
 
 const MainLayout = () => {
   const location = useLocation();
@@ -8,6 +9,7 @@ const MainLayout = () => {
 
   return (
     <div>
+      <Toaster/>
       {/* Navbar */}
       <div
         className={`mt-4 h-16 container mx-auto rounded-t-xl ${
