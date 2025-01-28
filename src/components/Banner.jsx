@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Banner = () => {
   return (
       <div className="bg-[#9538E2] mb-12 p-10 rounded-b-xl h-[630px]">
@@ -10,12 +12,12 @@ const Banner = () => {
             next level. From smart devices <br /> to the coolest accessories, we
             have it all!
           </p>
-          <button className="btn rounded-full text-xl p-7 font-bold text-[#9538E2] mb-">
+          <Link to='/dashboard' className="btn rounded-full text-xl p-5 font-bold text-[#9538E2]">
             Shop Now
-          </button>
+          </Link>
           <div className="border border-white rounded-3xl p-6 bg-white/25">
             <img
-              className="rounded-3xl max-h-[560px] max-w-[1062px] object-cover"
+              className="rounded-3xl w-full max-w-[1062px] object-cover"
               src="./banner.jpg"
             />
           </div>

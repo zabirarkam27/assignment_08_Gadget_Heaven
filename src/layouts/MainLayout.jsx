@@ -5,7 +5,6 @@ import Navbar from "../components/Navbar";
 const MainLayout = () => {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
-  console.log(isHomePage);
 
   return (
     <div>
@@ -18,7 +17,7 @@ const MainLayout = () => {
         <Navbar />
       </div>
       {/* Dynamic Section */}
-      <div className="min-h-[calc(100vh-360px)] container mx-auto">
+      <div className="min-h-[calc(100vh-450px)] bg-gray-50 container mx-auto">
         <Outlet />
       </div>
       <Footer />

@@ -1,8 +1,8 @@
 [
     {
-        "product_id": 1,
-        "product_title": "Apple iPhone 15 Pro Max",
-        "product_image": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/wm/2023/10/iphone-15-pro-max-1.JPG",
+        "id": 1,
+        "title": "Apple iPhone 15 Pro Max",
+        "image": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/wm/2023/10/iphone-15-pro-max-1.JPG",
         "category": "iPhone",
         "price": 1299,
         "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
@@ -13,13 +13,13 @@
             "LiDAR Scanner",
             "Up to 2TB storage"
         ],
-        "availability": true,
+        "availability": false,
         "rating": 4.8
     },
     {
-        "product_id": 2,
-        "product_title": "Samsung Galaxy S23 Ultra",
-        "product_image": "https://i.ytimg.com/vi/bp-APae1RM0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCeenZ-c9yi39YbJk2CV_LvU1cKsg",
+        "id": 2,
+        "title": "Samsung Galaxy S23 Ultra",
+        "image": "https://i.ytimg.com/vi/bp-APae1RM0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCeenZ-c9yi39YbJk2CV_LvU1cKsg",
         "category": "Phones",
         "price": 1199,
         "description": "Redefine mobile photography with the Galaxy S23 Ultra.",
@@ -34,9 +34,9 @@
         "rating": 4.7
     },
     {
-        "product_id": 3,
-        "product_title": "Dell XPS 15",
-        "product_image": "https://images.anandtech.com/doci/12605/Dell-XPS-15-2-in-1-on-white_4.jpg",
+        "id": 3,
+        "title": "Dell XPS 15",
+        "image": "https://images.anandtech.com/doci/12605/Dell-XPS-15-2-in-1-on-white_4.jpg",
         "category": "Laptops",
         "price": 2199,
         "description": "High performance meets elegant design in the Dell XPS 15.",
@@ -51,9 +51,9 @@
         "rating": 4.6
     },
     {
-        "product_id": 4,
-        "product_title": "Apple MacBook Pro M2",
-        "product_image": "https://static.independent.co.uk/2023/01/24/10/Apple%20Macbook%20pro%20Indybest%20copy.jpg",
+        "id": 4,
+        "title": "Apple MacBook Pro M2",
+        "image": "https://static.independent.co.uk/2023/01/24/10/Apple%20Macbook%20pro%20Indybest%20copy.jpg",
         "category": "MacBook",
         "price": 2499,
         "description": "Powerful performance with Apple's M2 Pro chip.",
@@ -68,9 +68,9 @@
         "rating": 4.9
     },
     {
-        "product_id": 5,
-        "product_title": "Logitech MX Master 3S",
-        "product_image": "https://images-cdn.ubuy.com.sa/6346e368d3e4ef5797301c42-logitech-mx-master-3-mouse-nirkabel.jpg",
+        "id": 5,
+        "title": "Logitech MX Master 3S",
+        "image": "https://images-cdn.ubuy.com.sa/6346e368d3e4ef5797301c42-logitech-mx-master-3-mouse-nirkabel.jpg",
         "category": "Accessories",
         "price": 99,
         "description": "Precision, speed, and comfort in a wireless mouse.",
@@ -85,9 +85,9 @@
         "rating": 4.9
     },
     {
-        "product_id": 6,
-        "product_title": "Apple Watch Series 9",
-        "product_image": "https://economictimes.indiatimes.com/thumb/msid-103616298,width-1200,height-900,resizemode-4,imgsize-70932/apple-watch-series-9-and-ultra-2-can-be-ordered-now-but-will-be-available-on-september-22-.jpg?from=mdr",
+        "id": 6,
+        "title": "Apple Watch Series 9",
+        "image": "https://economictimes.indiatimes.com/thumb/msid-103616298,width-1200,height-900,resizemode-4,imgsize-70932/apple-watch-series-9-and-ultra-2-can-be-ordered-now-but-will-be-available-on-september-22-.jpg?from=mdr",
         "category": "Smart Watches",
         "price": 399,
         "description": "Stay connected with health and fitness features.",
@@ -102,9 +102,9 @@
         "rating": 4.7
     },
     {
-        "product_id": 7,
-        "product_title": "Microsoft Surface Laptop 5",
-        "product_image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/MSFT-Render-Platinum-Surface-Laptop-5-RE50yTd?fmt=png-alpha&scl=1",
+        "id": 7,
+        "title": "Microsoft Surface Laptop 5",
+        "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/MSFT-Render-Platinum-Surface-Laptop-5-RE50yTd?fmt=png-alpha&scl=1",
         "category": "Laptops",
         "price": 1599,
         "description": "Sleek design with the power of Windows 11.",
@@ -115,13 +115,13 @@
             "16GB RAM",
             "Dolby Atmos speakers"
         ],
-        "availability": true,
+        "availability": false,
         "rating": 4.5
     },
     {
-        "product_id": 8,
-        "product_title": "Samsung Galaxy Watch 6",
-        "product_image": "https://images.samsung.com/bd/galaxy-watch6/feature/galaxy-watch6-safety-mo.jpg",
+        "id": 8,
+        "title": "Samsung Galaxy Watch 6",
+        "image": "https://images.samsung.com/bd/galaxy-watch6/feature/galaxy-watch6-safety-mo.jpg",
         "category": "Smart Watches",
         "price": 299,
         "description": "Track your fitness goals with advanced features.",
@@ -136,9 +136,9 @@
         "rating": 4.6
     },
     {
-        "product_id": 9,
-        "product_title": "Asus ROG Zephyrus G14",
-        "product_image": "https://images-cdn.ubuy.co.in/633fec90328a6f66f3526dd3-asus-rog-zephyrus-g14-14-fhd-led.jpg",
+        "id": 9,
+        "title": "Asus ROG Zephyrus G14",
+        "image": "https://images-cdn.ubuy.co.in/633fec90328a6f66f3526dd3-asus-rog-zephyrus-g14-14-fhd-led.jpg",
         "category": "Laptops",
         "price": 1999,
         "description": "Compact gaming laptop with top-notch performance.",
@@ -153,9 +153,9 @@
         "rating": 4.8
     },
     {
-        "product_id": 10,
-        "product_title": "Beats Studio Buds",
-        "product_image": "https://media.officedepot.com/images/f_auto,q_auto,e_sharpen,h_450/products/5506272/5506272_o66_et_8503062/5506272",
+        "id": 10,
+        "title": "Beats Studio Buds",
+        "image": "https://media.officedepot.com/images/f_auto,q_auto,e_sharpen,h_450/products/5506272/5506272_o66_et_8503062/5506272",
         "category": "Accessories",
         "price": 149,
         "description": "High-quality wireless earbuds for music lovers.",
@@ -170,9 +170,9 @@
         "rating": 4.4
     },
     {
-        "product_id": 11,
-        "product_title": "Apple iPhone 14 Pro",
-        "product_image": "https://lh3.googleusercontent.com/proxy/XY9eJWwAXrRQ4tKhvXlkfuBlDXX-Lut6i0DVJ5m0A_N5SqEL34qpuRRidFW44PcvF8HOBPzseaO8FASFOiHs9xJshYTpWXaRfk_8C6CsJ_I5VEO7-c5l",
+        "id": 11,
+        "title": "Apple iPhone 14 Pro",
+        "image": "https://lh3.googleusercontent.com/proxy/XY9eJWwAXrRQ4tKhvXlkfuBlDXX-Lut6i0DVJ5m0A_N5SqEL34qpuRRidFW44PcvF8HOBPzseaO8FASFOiHs9xJshYTpWXaRfk_8C6CsJ_I5VEO7-c5l",
         "category": "iPhone",
         "price": 1099,
         "description": "A leap forward in smartphone technology.",
@@ -187,9 +187,9 @@
         "rating": 4.7
     },
     {
-        "product_id": 12,
-        "product_title": "Google Pixel 8 Pro",
-        "product_image": "https://lh3.googleusercontent.com/KaLIFYVg9298b8jv33H3pagRaAz4lCQxrQz-goMEsiTuCmUf2Ood9ktkzgjpotkMuRcAMimOV2RfN7vBZVmnInf5wcwUNsRZpw",
+        "id": 12,
+        "title": "Google Pixel 8 Pro",
+        "image": "https://lh3.googleusercontent.com/KaLIFYVg9298b8jv33H3pagRaAz4lCQxrQz-goMEsiTuCmUf2Ood9ktkzgjpotkMuRcAMimOV2RfN7vBZVmnInf5wcwUNsRZpw",
         "category": "Phones",
         "price": 999,
         "description": "Pure Android experience with exceptional camera quality.",
@@ -204,9 +204,9 @@
         "rating": 4.6
     },
     {
-        "product_id": 13,
-        "product_title": "HP Spectre x360",
-        "product_image": "https://computermania.com.bd/wp-content/uploads/HP-Spectre-x360-13-in-bd-2.jpg",
+        "id": 13,
+        "title": "HP Spectre x360",
+        "image": "https://computermania.com.bd/wp-content/uploads/HP-Spectre-x360-13-in-bd-2.jpg",
         "category": "Laptops",
         "price": 1799,
         "description": "A versatile 2-in-1 laptop for productivity and creativity.",
@@ -221,9 +221,9 @@
         "rating": 4.7
     },
     {
-        "product_id": 14,
-        "product_title": "Sony WH-1000XM5",
-        "product_image": "https://www.stuff.tv/wp-content/uploads/sites/2/2022/06/IMG_5175.jpg?w=1080",
+        "id": 14,
+        "title": "Sony WH-1000XM5",
+        "image": "https://www.stuff.tv/wp-content/uploads/sites/2/2022/06/IMG_5175.jpg?w=1080",
         "category": "Accessories",
         "price": 349,
         "description": "Premium noise-canceling headphones with superior sound quality.",
@@ -238,9 +238,9 @@
         "rating": 4.9
     },
     {
-        "product_id": 15,
-        "product_title": "Garmin Fenix 7X",
-        "product_image": "https://res.cloudinary.com/ekoweb/image/upload/s--ZeiXss44--/f_auto,h_600,q_auto:eco,w_600/v1/products/9-101781/views/9-101781_fenix-7x-sapphire-solar-cobalt-blue-w-white-band_010-02541-15_01",
+        "id": 15,
+        "title": "Garmin Fenix 7X",
+        "image": "https://res.cloudinary.com/ekoweb/image/upload/s--ZeiXss44--/f_auto,h_600,q_auto:eco,w_600/v1/products/9-101781/views/9-101781_fenix-7x-sapphire-solar-cobalt-blue-w-white-band_010-02541-15_01",
         "category": "Smart Watches",
         "price": 799,
         "description": "Advanced multisport GPS watch for adventurers.",
@@ -255,26 +255,20 @@
         "rating": 4.8
     },
     {
-        "product_id": 16,
-        "product_title": "Lenovo Legion 5 Pro",
-        "product_image": "https://www.techspot.com/articles-info/2405/images/2022-02-06-image-5.jpg",
+        "id": 16,
+        "title": "Lenovo Legion 5 Pro",
+        "image": "https://www.techspot.com/articles-info/2405/images/2022-02-06-image-5.jpg",
         "category": "Laptops",
         "price": 1499,
         "description": "Gaming laptop with powerful performance and stunning display.",
-        "specification": [
-            "16-inch WQXGA display (165Hz)",
-            "AMD Ryzen 7 5800H",
-            "NVIDIA GeForce RTX 3070",
-            "512GB SSD",
-            "16GB DDR4 RAM"
-        ],
+        "specification": [],
         "availability": true,
         "rating": 4.7
     },
     {
-        "product_id": 17,
-        "product_title": "Apple Magic Keyboard",
-        "product_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Apple-wireless-keyboard-aluminum-2007.jpg/640px-Apple-wireless-keyboard-aluminum-2007.jpg",
+        "id": 17,
+        "title": "Apple Magic Keyboard",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Apple-wireless-keyboard-aluminum-2007.jpg/640px-Apple-wireless-keyboard-aluminum-2007.jpg",
         "category": "Accessories",
         "price": 99,
         "description": "Wireless keyboard with a sleek design and touch ID.",
@@ -289,9 +283,9 @@
         "rating": 4.5
     },
     {
-        "product_id": 18,
-        "product_title": "Samsung Galaxy Tab S9",
-        "product_image": "https://samsungmobilepress.com/file/1335B7394241CA2E85D29D98888D5BB384EE2B28F7DC254DC3571BAFE052C785580B478EC5B39E7121A187C20A96BEC4C47115654C924AC6B55940710385BB8789DF5EC830420BBDFEB91B797C03631BC74EE6F4449EAD682F1E9B1FCE0CB9A1DCDE243E8BE92FA60919956853ED653632BD40B7BEBB40E64DC6479C69D62A3AC58ADE961218F160446794BA53B6038447B34A2B7A8BF4479E57F7BDF078C1A1F9D63EB872E51998ECD47D95F1CADA10880D980235961944D4717160738E0C27",
+        "id": 18,
+        "title": "Samsung Galaxy Tab S9",
+        "image": "https://samsungmobilepress.com/file/1335B7394241CA2E85D29D98888D5BB384EE2B28F7DC254DC3571BAFE052C785580B478EC5B39E7121A187C20A96BEC4C47115654C924AC6B55940710385BB8789DF5EC830420BBDFEB91B797C03631BC74EE6F4449EAD682F1E9B1FCE0CB9A1DCDE243E8BE92FA60919956853ED653632BD40B7BEBB40E64DC6479C69D62A3AC58ADE961218F160446794BA53B6038447B34A2B7A8BF4479E57F7BDF078C1A1F9D63EB872E51998ECD47D95F1CADA10880D980235961944D4717160738E0C27",
         "category": "Accessories",
         "price": 999,
         "description": "High-performance tablet for productivity and entertainment.",
@@ -302,13 +296,13 @@
             "Up to 1TB storage",
             "5G connectivity"
         ],
-        "availability": true,
+        "availability": false,
         "rating": 4.7
     },
     {
-        "product_id": 19,
-        "product_title": "Apple AirPods Pro 2nd Gen",
-        "product_image": "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111851_sp880-airpods-Pro-2nd-gen.png",
+        "id": 19,
+        "title": "Apple AirPods Pro 2nd Gen",
+        "image": "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111851_sp880-airpods-Pro-2nd-gen.png",
         "category": "Accessories",
         "price": 249,
         "description": "Immersive sound with active noise cancelation.",
@@ -323,9 +317,9 @@
         "rating": 4.8
     },
     {
-        "product_id": 20,
-        "product_title": "Apple MacBook Air M2",
-        "product_image": "https://images.squarespace-cdn.com/content/v1/5e949a92e17d55230cd1d44f/1ac21f98-226e-47d9-b624-bf749bbfbbff/MBAM2.png",
+        "id": 20,
+        "title": "Apple MacBook Air M2",
+        "image": "https://images.squarespace-cdn.com/content/v1/5e949a92e17d55230cd1d44f/1ac21f98-226e-47d9-b624-bf749bbfbbff/MBAM2.png",
         "category": "MacBook",
         "price": 1299,
         "description": "Lightweight and powerful laptop with the M2 chip.",

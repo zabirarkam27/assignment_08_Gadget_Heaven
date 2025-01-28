@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar px-10 z-50 fixed backdrop-blur-xl rounded-t-xl">
+      <div className="navbar px-4 md:px-10 z-50 top-0 left-0 right-0 fixed backdrop-blur-xl rounded-t-xl w-full">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -87,7 +87,7 @@ const Navbar = () => {
             </NavLink>
           </ul>
         </div>
-        <div className="navbar-end space-x-2">
+        <div className="navbar-end space-x-2 flex items-center justify-end">
           <a className="btn bg-white py-4 px-3 rounded-full">
             <img
               className="w-4"
