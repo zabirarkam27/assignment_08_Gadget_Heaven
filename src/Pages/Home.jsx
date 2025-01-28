@@ -1,11 +1,15 @@
 import { Outlet, useLoaderData } from "react-router-dom";
 import Banner from "../components/Banner";
 import Sidebar from "../components/Sidebar";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   const categories = useLoaderData()
   return (
     <>
+      <Helmet>
+        <title>Gadget Heaven || Home</title>
+      </Helmet>
       <Banner />
       <div className="mt-[400px]">
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-6">

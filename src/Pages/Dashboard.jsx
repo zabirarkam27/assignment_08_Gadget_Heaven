@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unknown-property */
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import Heading from "./../components/Heading";
 import {
   getAllWishlist,
@@ -11,10 +11,12 @@ import {
 } from "../utilities";
 
 import DashboardCard from "../components/DashboardCard";
+import { Helmet } from "react-helmet-async";
 
 const Dashboard = () => {
   const [wishlist, setWishlist] = useState([]);
   const [cart, setCart] = useState([]);
+  const [searchParams] = useSearchParams();
   const [activeTab, setActiveTab] = useState("cart");
   const navigate = useNavigate();
 
@@ -22,6 +24,13 @@ const Dashboard = () => {
     setWishlist(getAllWishlist());
     setCart(getAllCartItems());
   }, []);
+
+  useEffect(() => {
+    const tab = searchParams.get("tab");
+    if (tab === "wishlist" || tab === "cart") {
+      setActiveTab(tab)
+    }
+  },[searchParams])
 
   const handleWishlistRemove = (id) => {
     removeWishlist(id);
@@ -63,6 +72,9 @@ const Dashboard = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Gadget Heaven || Dashboard</title>
+      </Helmet>
       {/* Heading */}
       <div className=" bg-[#9538E2] py-8 my-8 space-y-8">
         <Heading

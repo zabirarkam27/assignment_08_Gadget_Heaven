@@ -50,6 +50,14 @@ const Navbar = () => {
               >
                 Dashboard
               </NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  `${isActive ? "text-warning" : "hover:text-[#e3c7fa]"}`
+                }
+                to="/about-us"
+              >
+                About-us
+              </NavLink>
             </ul>
           </div>
           <Link
@@ -85,23 +93,37 @@ const Navbar = () => {
             >
               Dashboard
             </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                `${isActive ? "text-warning" : "hover:text-[#e3c7fa]"}`
+              }
+              to="/about-us"
+            >
+              About-us
+            </NavLink>
           </ul>
         </div>
         <div className="navbar-end space-x-2 flex items-center justify-end">
-          <a className="btn bg-white py-4 px-3 rounded-full">
+          <NavLink
+            to="/dashboard?tab=cart"
+            className="btn bg-white py-4 px-3 rounded-full"
+          >
             <img
               className="w-4"
               src="https://img.icons8.com/?size=100&id=9671&format=png&color=000000"
               alt="cart-icon"
             />
-          </a>
-          <a className="btn bg-white py-4 px-3 rounded-full">
+          </NavLink>
+          <NavLink
+            to="/dashboard?tab=wishlist"
+            className="btn bg-white py-4 px-3 rounded-full"
+          >
             <img
               className="w-4"
               src="https://img.icons8.com/?size=100&id=86721&format=png&color=000000"
-              alt="cart-icon"
+              alt="wishlist-icon"
             />
-          </a>
+          </NavLink>
         </div>
       </div>
     </div>

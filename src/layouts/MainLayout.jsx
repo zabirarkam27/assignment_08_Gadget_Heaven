@@ -2,13 +2,14 @@ import { Outlet, useLocation } from "react-router-dom";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { Toaster } from "react-hot-toast";
+import { HelmetProvider } from "react-helmet-async";
 
 const MainLayout = () => {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
 
   return (
-    <div>
+    <HelmetProvider>
       <Toaster/>
       {/* Navbar */}
       <div
@@ -23,7 +24,7 @@ const MainLayout = () => {
         <Outlet />
       </div>
       <Footer />
-    </div>
+    </HelmetProvider>
   );
 };
 
