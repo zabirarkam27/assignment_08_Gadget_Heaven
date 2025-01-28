@@ -1,4 +1,6 @@
+/* eslint-disable react/no-unknown-property */
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Heading from "./../components/Heading";
 import {
   getAllWishlist,
@@ -7,13 +9,14 @@ import {
   removeWishlist,
   addCart,
 } from "../utilities";
+
 import DashboardCard from "../components/DashboardCard";
 
 const Dashboard = () => {
-  // const [gadgets, setGadgets] = useState([]);
   const [wishlist, setWishlist] = useState([]);
   const [cart, setCart] = useState([]);
   const [activeTab, setActiveTab] = useState("cart");
+  const navigate = useNavigate();
 
   useEffect(() => {
     setWishlist(getAllWishlist());
@@ -36,6 +39,26 @@ const Dashboard = () => {
 
     setCart(getAllCartItems());
     setWishlist(getAllWishlist());
+  };
+
+  let totalPrice = 0;
+  for (const item of cart) {
+    totalPrice += item.price;
+  }
+
+  const handleSortByPrice = () => {
+    const sortedCart = [...cart].sort((a, b) => b.price - a.price);
+    setCart(sortedCart);
+  };
+
+  const handlePurchase = () => {
+    document.getElementById("my_modal_5").showModal();
+  };
+
+  const handleCloseModal = () => {
+    localStorage.removeItem("cartItems");
+    setCart([]);
+    navigate("/");
   };
 
   return (
@@ -76,10 +99,13 @@ const Dashboard = () => {
           <div className="w-11/12 mx-auto flex items-center justify-between mb-8">
             <h2 className="text-2xl font-bold">Cart</h2>
             <div className="flex flex-col lg:flex-row items-center gap-0 lg:gap-4">
-              <h2 className="text-xl font-bold">Total cost: </h2>
+              <h2 className="text-xl font-bold">Total cost: $ {totalPrice}</h2>
 
               {/* sort btn */}
-              <button className="btn rounded-full font-semibold border-[#9538E2]   hover:border-white hover:bg-[#9538E2] hover:text-white transition-colors text-[#9538E2] duration-300 mt-4 flex items-center space-x-2">
+              <button
+                onClick={handleSortByPrice}
+                className="btn rounded-full font-semibold border-[#9538E2]   hover:border-white hover:bg-[#9538E2] hover:text-white transition-colors text-[#9538E2] duration-300 mt-4 flex items-center space-x-2"
+              >
                 <p className="font-bold">Sort by Price</p>
                 <img
                   className="w-4"
@@ -89,7 +115,11 @@ const Dashboard = () => {
               </button>
 
               {/* purchase btn */}
-              <button className="btn rounded-full font-semibold border-[#9538E2] bg-[#9538E2] hover:bg-white text-white hover:text-[#9538E2] transition-colors duration-300 mt-4 flex items-center space-x-2">
+              <button
+                onClick={handlePurchase}
+                disabled={cart.length === 0 || totalPrice === 0}
+                className="btn rounded-full font-semibold border-[#9538E2] bg-[#9538E2] hover:bg-white text-white hover:text-[#9538E2] transition-colors duration-300 mt-4 flex items-center space-x-2"
+              >
                 Purchase
               </button>
             </div>
@@ -130,6 +160,29 @@ const Dashboard = () => {
           </div>
         </div>
       )}
+
+      {/* modal */}
+      <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
+        <div className="flex flex-col justify-center items-center bg-white rounded-xl p-4 w-1/4 space-y-2">
+          <img
+            src="https://img.icons8.com/?size=100&id=A8xKzsTKHhzn&format=png&color=000000"
+            alt="success icon"
+          />
+          <h2>Payment Successfully Done</h2>
+          <div className="border-b border-gray-500" />
+          <p className="text-gray-500">Thanks for purchasing from us.</p>
+          <p className="text-gray-500">Total: $ {totalPrice}</p>
+          <form method="dialog">
+            <button
+              handleRemove={handleCartRemove}
+              onClick={handleCloseModal}
+              className="btn bg-gray-300 w-[250px] rounded-full my-3 py-2"
+            >
+              Close
+            </button>
+          </form>
+        </div>
+      </dialog>
     </>
   );
 };

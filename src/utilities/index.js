@@ -15,7 +15,6 @@ const updateLocalStorage = (key, items) => {
 };
 
 const getAllCartItems = () => {
-    console.log(fetchDataFromLocalStorage("cartItems"));
     return fetchDataFromLocalStorage("cartItems");
 };
 
