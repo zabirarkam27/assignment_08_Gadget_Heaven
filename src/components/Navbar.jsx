@@ -28,7 +28,7 @@ const Navbar = () => {
             >
               <NavLink
                 className={({ isActive }) =>
-                  `${isActive ? "text-white font-bold" : "hover:text-gray-200"}`
+                  `${isActive ? "text-white font-bold" : "hover:text-gray-200"}hover:scale-105 transition-transform`
                 }
                 to="/"
               >
@@ -36,7 +36,7 @@ const Navbar = () => {
               </NavLink>
               <NavLink
                 className={({ isActive }) =>
-                  `${isActive ? "text-white font-bold" : "hover:text-gray-200"}`
+                  `${isActive ? "text-white font-bold" : "hover:text-gray-200"}hover:scale-105 transition-transform`
                 }
                 to="/statistics"
               >
@@ -44,7 +44,7 @@ const Navbar = () => {
               </NavLink>
               <NavLink
                 className={({ isActive }) =>
-                  `${isActive ? "text-white font-bold" : "hover:text-gray-200"}`
+                  `${isActive ? "text-white font-bold" : "hover:text-gray-200"}hover:scale-105 transition-transform`
                 }
                 to="/dashboard"
               >
@@ -52,7 +52,7 @@ const Navbar = () => {
               </NavLink>
               <NavLink
                 className={({ isActive }) =>
-                  `${isActive ? "text-white font-bold" : "hover:text-gray-200"}`
+                  `${isActive ? "text-white font-bold" : "hover:text-gray-200"}hover:scale-105 transition-transform`
                 }
                 to="/about-us"
               >
@@ -62,7 +62,7 @@ const Navbar = () => {
           </div>
           <Link
             to="/"
-            className="font-bold hover:text-[#9538E2] hover:scale-105 transition-colors text-xl"
+            className="font-bold hover:white hover:scale-105 transition-transform text-xl"
           >
             Gadget Heaven
           </Link>
@@ -71,7 +71,9 @@ const Navbar = () => {
           <ul className="menu menu-horizontal space-x-4 px-1">
             <NavLink
               className={({ isActive }) =>
-                `${isActive ? "text-white font-bold" : "hover:text-gray-200"}`
+                `${
+                  isActive ? "text-white font-bold" : "hover:text-gray-200"
+                } hover:scale-105 transition-transform`
               }
               to="/"
             >
@@ -79,7 +81,9 @@ const Navbar = () => {
             </NavLink>
             <NavLink
               className={({ isActive }) =>
-                `${isActive ? "text-white font-bold" : "hover:text-gray-200"}`
+                `${
+                  isActive ? "text-white font-bold" : "hover:text-gray-200"
+                } hover:scale-105 transition-transform`
               }
               to="/statistics"
             >
@@ -87,7 +91,7 @@ const Navbar = () => {
             </NavLink>
             <NavLink
               className={({ isActive }) =>
-                `${isActive ? "text-white font-bold" : "hover:text-gray-200"}`
+                `${isActive ? "text-white font-bold" : "hover:text-gray-200"} hover:scale-105 transition-transform`
               }
               to="/dashboard"
             >
@@ -95,7 +99,7 @@ const Navbar = () => {
             </NavLink>
             <NavLink
               className={({ isActive }) =>
-                `${isActive ? "text-white font-bold" : "hover:text-gray-200"}`
+                `${isActive ? "text-white font-bold" : "hover:text-gray-200"} hover:scale-105 transition-transform`
               }
               to="/about-us"
             >

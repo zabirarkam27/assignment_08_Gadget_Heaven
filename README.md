@@ -1,6 +1,6 @@
-# Gadget Heaven - A React-based E-Commerce Website
+# Gadget Heaven
 
-Welcome to Gadget Heaven! This project showcases the latest gadgets with a smooth shopping experience. Users can browse, add items to their cart, and make purchases. The website is built using React and TailwindCSS for responsive design.
+Welcome to **GadgetHeaven**! This is an e-commerce website designed to provide a smooth shopping experience for tech enthusiasts. The site features gadgets such as computers, phones, smartwatches, and more, with functionalities like shopping cart, wishlist, and product filtering. The platform is built using React, Context API, and TailwindCSS for responsive design.
 
 ---
 
@@ -12,7 +12,7 @@ Welcome to Gadget Heaven! This project showcases the latest gadgets with a smoot
 
 ## Requirement Document Link
 
-[Requirement Document](https://your-requirement-document-link.com)
+[Requirement Document](/Batch-10_Assignment-08.pdf)
 
 ---
 
@@ -24,22 +24,47 @@ Welcome to Gadget Heaven! This project showcases the latest gadgets with a smoot
 4. **Conditional Rendering** - Dynamically render UI based on state (e.g., Cart vs Wishlist).
 5. **Event Handling** - Used to manage user interactions, such as button clicks.
 6. **JSX** - The project extensively uses JSX for creating the UI.
+7. **Context API** - Used to manage global states like cart items and wishlist across various components.
+8. **useLocation** and **useNavigate** - For dynamic page title, navigation, and background color change.
 
 ---
 
 ## Data Handling and Management
 
-- **Context API** - A simple context is used for managing global states like user authentication, cart items, and wishlist across different components.
+- **Context API** - The Context API is used for managing the global state, specifically for the shopping cart and wishlist. This helps avoid prop drilling and simplifies state management across multiple components.
 - **Local Storage** - Cart items and wishlist data are persisted using the browser's local storage so that users don't lose their items after refreshing the page.
 
 ---
 
 ## Features of the Website
 
-1. **Gadget Browsing** - Users can view a wide selection of gadgets, filter by category, and search for specific items.
-2. **Add to Cart** - Users can add items to their cart and manage them (remove or modify quantities).
-3. **Wishlist Management** - Users can add gadgets to their wishlist for future reference.
-4. **Cart Sorting** - Users can sort items in their cart by price to easily compare and make decisions.
-5. **Responsive Design** - The website is fully responsive, providing an optimal viewing experience across various devices (mobiles, tablets, desktops).
+1. **Gadget Categories and Cards**: The homepage displays a grid of gadgets, categorized by type (computers, phones, smartwatches, etc.). Each card shows the product’s name, image, and price with a 'Details' button leading to the product’s detailed page.
+
+2. **Product Filtering**: Users can filter gadgets by category from a sidebar. Clicking a category shows gadgets specific to that category, while the default view displays gadgets from all categories.
+
+3. **Shopping Cart and Wishlist**: Users can add gadgets to their shopping cart or wishlist. The cart’s total price is displayed, and users can sort items by price. Items in the wishlist can also be added to the cart.
+
+4. **Modal for Purchase**: After clicking the "Purchase" button, a congratulatory modal appears. The cart is emptied, and the total price resets to zero.
+
+5. **404 Page**: A dedicated 404 error page appears if the user navigates to an invalid route.
+
+6. **Dynamic Page Title**: The page title updates dynamically based on the route using React Router’s `useLocation` hook.
+
+7. **Favicon**: A custom favicon is added to the website for branding.
+
+8. **Toast Notifications**: Toast messages are displayed when an item is added to the cart or wishlist, indicating success.
+9. **Edge Case Handling**: The website handles edge cases, such as preventing errors on page reload and ensuring no duplicate items are added to the wishlist.
+10. **Responsive Design**: The website is fully responsive, ensuring a seamless experience on devices of all sizes.
+
+---
+
+## Technologies Used
+
+- **React** - JavaScript library for building user interfaces.
+- **React Router** - Used for navigation and routing between pages.
+- **Context API** - Used for global state management (cart and wishlist).
+- **TailwindCSS** - For responsive and utility-first CSS styling.
+- **LocalStorage** - For persisting cart and wishlist data.
+- **React Rating** - Used for displaying ratings of products.
 
 ---
