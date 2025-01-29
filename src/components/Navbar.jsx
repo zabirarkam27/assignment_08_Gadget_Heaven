@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar px-4 md:px-10 z-50 top-0 left-0 right-0 fixed backdrop-blur-xl rounded-t-xl w-full">
+      <div className="navbar px-4 md:px-10 z-50 top-0 left-0 right-0 fixed backdrop-blur-xl bg-[#9538E2]/50 text-white rounded-t-xl w-full">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -24,11 +24,11 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-[#b76ef3] text-white rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <NavLink
                 className={({ isActive }) =>
-                  `${isActive ? "text-warning" : "hover:text-[#e3c7fa]"}`
+                  `${isActive ? "text-white font-bold" : "hover:text-gray-200"}`
                 }
                 to="/"
               >
@@ -36,7 +36,7 @@ const Navbar = () => {
               </NavLink>
               <NavLink
                 className={({ isActive }) =>
-                  `${isActive ? "text-warning" : "hover:text-[#e3c7fa]"}`
+                  `${isActive ? "text-white font-bold" : "hover:text-gray-200"}`
                 }
                 to="/statistics"
               >
@@ -44,7 +44,7 @@ const Navbar = () => {
               </NavLink>
               <NavLink
                 className={({ isActive }) =>
-                  `${isActive ? "text-warning" : "hover:text-[#e3c7fa]"}`
+                  `${isActive ? "text-white font-bold" : "hover:text-gray-200"}`
                 }
                 to="/dashboard"
               >
@@ -52,7 +52,7 @@ const Navbar = () => {
               </NavLink>
               <NavLink
                 className={({ isActive }) =>
-                  `${isActive ? "text-warning" : "hover:text-[#e3c7fa]"}`
+                  `${isActive ? "text-white font-bold" : "hover:text-gray-200"}`
                 }
                 to="/about-us"
               >
@@ -71,7 +71,7 @@ const Navbar = () => {
           <ul className="menu menu-horizontal space-x-4 px-1">
             <NavLink
               className={({ isActive }) =>
-                `${isActive ? "text-warning" : "hover:text-[#e3c7fa]"}`
+                `${isActive ? "text-white font-bold" : "hover:text-gray-200"}`
               }
               to="/"
             >
@@ -79,7 +79,7 @@ const Navbar = () => {
             </NavLink>
             <NavLink
               className={({ isActive }) =>
-                `${isActive ? "text-warning" : "hover:text-[#e3c7fa]"}`
+                `${isActive ? "text-white font-bold" : "hover:text-gray-200"}`
               }
               to="/statistics"
             >
@@ -87,7 +87,7 @@ const Navbar = () => {
             </NavLink>
             <NavLink
               className={({ isActive }) =>
-                `${isActive ? "text-warning" : "hover:text-[#e3c7fa]"}`
+                `${isActive ? "text-white font-bold" : "hover:text-gray-200"}`
               }
               to="/dashboard"
             >
@@ -95,7 +95,7 @@ const Navbar = () => {
             </NavLink>
             <NavLink
               className={({ isActive }) =>
-                `${isActive ? "text-warning" : "hover:text-[#e3c7fa]"}`
+                `${isActive ? "text-white font-bold" : "hover:text-gray-200"}`
               }
               to="/about-us"
             >

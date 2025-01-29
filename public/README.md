@@ -12,7 +12,7 @@ Welcome to **GadgetHeaven**! This is an e-commerce website designed to provide a
 
 ## Requirement Document Link
 
-[Requirement Document](./Batch-10_Assignment-08.pdf)
+[Requirement Document](https://gadget-heaven-by-zabir.netlify.app/Batch-10_Assignment-08.pdf)
 
 ---
 
