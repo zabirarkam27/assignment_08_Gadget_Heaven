@@ -175,20 +175,22 @@ const Dashboard = () => {
 
       {/* modal */}
       <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
-        <div className="flex flex-col justify-center items-center bg-white rounded-xl p-4 w-1/4 space-y-2">
+        <div className="flex flex-col justify-center items-center bg-white rounded-xl p-4 w-3/7 space-y-2">
           <img
             src="https://img.icons8.com/?size=100&id=A8xKzsTKHhzn&format=png&color=000000"
             alt="success icon"
           />
-          <h2>Payment Successfully Done</h2>
+          <h2 className="text-center font-bold text-xl">Payment Successfully Done!</h2>
           <div className="border-b border-gray-500" />
-          <p className="text-gray-500">Thanks for purchasing from us.</p>
-          <p className="text-gray-500">Total: $ {totalPrice}</p>
+          <p className="text-gray-500 font-semibold text-center">
+            Thanks for purchasing from us.
+          </p>
+          <p className="text-gray-700 font-bold">Total: $ {totalPrice}</p>
           <form method="dialog">
             <button
               handleRemove={handleCartRemove}
               onClick={handleCloseModal}
-              className="btn bg-gray-300 w-[250px] rounded-full my-3 py-2"
+              className="btn bg-gray-200 w-full rounded-full my-3 py-2 px-10"
             >
               Close
             </button>
